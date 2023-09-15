@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's travel to Seoul</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		<script>
+		  WebFont.load({
+			google: {
+			  families: ['Montserrat:300,400,700', 'Raleway:300,400,500,600,700,800']
+			}
+		  });
+		</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+		<link rel="stylesheet" href="css/style.css"/>
+  
+        <script src="https://kit.fontawesome.com/151f6026c2.js" crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- menu -->
+    <header> 
+        <div class="container clearfix">
+            <h1 class="logo">
+                <a href="#" >SeoulMate</a>
+            </h1>
+            <nav class="clearfix">
+                <ul class="main-menu">
+                    <li><a href="" class="active">Home</a></li>
+                    <li><a href="">About Seoul</a></li>
+                    <li><a href="">Places</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <span class="toggle"><i class="fas fa-bars"></i></span>
+            </nav>    		
+    </header>
+
+    <!-- intro -->
+    <div class="slider">
+        <ul class="slider-list cycle-slideshow" 
+				data-cycle-fx="scrollHorz" 
+				data-cycle-timeout="0"
+				data-cycle-slides="> li"
+				data-cycle-prev=".slider .prev"
+				data-cycle-next=".slider .next"
+				data-cycle-pager=".pager"
+				>
+				<li class="slide1">
+					<div class="contents">
+						<h3>Historical</h3>
+						<h2>Visit Seoul </h2>
+						<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>	
+					</div>
+
+				</li>
+				<li class="slide2">
+					<div class="contents">
+            <h3>Historical</h3>
+						<h2>Visit Seoul </h2>
+						<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>	
+					</div>
+				</li>
+				<li class="slide3">
+					<div class="contents">
+            <h3>Historical</h3>
+						<h2>Visit Seoul </h2>
+						<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>	
+					</div>
+				</li>
+            	
+			</ul>
+			<p class="controls">
+				<a href="" class="prev"><img src="./css/image/free-icon-left-arrow-271220.png" alt=""></a>
+				<a href="" class="next"><img src="./css/image/free-icon-right-arrow-271228.png" alt=""></a>
+			</p>
+			<p class="pager clearfix"></p>
+    </div>
+
+    
+    <main class="content"> 
+
+      <!-- weather -->
+      <section class="weather container clearfix">
+        <h3 class="title">Today's weather in Seoul</h3>
+        <p class="time"></p>
+
+        <div class="weather-items">
+          <div class="weather-item">
+            <div class="weather-icon"></div>
+            <div class="description"></div>
+          </div>
+          
+          <div class="weather-item">
+            <div class="weather-text">Now</div>
+            <div class="ctemp"></div>
+          </div>
+
+          <div class="weather-item">
+            <div class="weather-text">Feels Like</div>
+            <div class="ftemp"></div>
+          </div>
+          
+          <div class="weather-item">
+            <div class="weather-text">Lowest</div>
+            <div class="mintemp"></div>
+          </div>
+          
+          <div class="weather-item">
+            <div class="weather-text">Highest</div>
+            <div class="maxtemp"></div>
+          </div>
+      </div>  
+      </section> <!-- // weather -->
+
+      <!-- service -->
+        <section class="services container clearfix">
+            <div class="service_item">
+                <span class="icon"><i class="fa-solid fa-book-open"></i></span>
+                <h4>History</h4>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <span class="status"></span>
+            </div>
+            <div class="service_item">
+                <span class="icon"><i class="fa-solid fa-guitar"></i></span>
+                <h4>Culture</h4>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <span class="status"></span>
+            </div>
+            <div class="service_item">
+                <span class="icon"><i class="fa-solid fa-city"></i></span>
+                <h4>Modern</h4>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <span class="status"></span>
+            </div>			
+            
+        </section><!--//services -->
+
+        <!-- recommended places -->
+        <section class="recommended_places container">
+          <h3 class="title">Recommended Places in Seoul</h3>
+          <p class="place_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo expedita doloribus velit corrupti exercitationem perspiciatis.</p>
+
+          <div class="places_wrap" >
+
+            <input type="radio" value="all" id="filter-all" name="filter" checked/>
+            <label for="filter-all">All</label>
+
+            <input type="radio" value="Guanghuamun" id="filter-guanghuamun" name="filter" checked/>
+            <label for="filter-guanghuamun">Guanghuamun</label>
+
+            <input type="radio" value="Myeongdong" id="filter-myeongdong" name="filter" checked/>
+            <label for="filter-myeongdong">Myeongdong</label>
+
+            <input type="radio" value="Itaewon" id="filter-iteawon" name="filter" checked/>
+            <label for="filter-iteawon">Itaewon</label>
+
+            <input type="radio" value="Jamsil" id="filter-jamsil" name="filter" checked/>
+            <label for="filter-jamsil">Jamsil</label>
+            
+            <input type="radio" value="Seongsu" id="filter-seongsu" name="filter" checked/>
+            <label for="filter-seongsu">Seongsu</label>
+
+            <input type="radio" value="Gangnam" id="filter-gangnam" name="filter" checked/>
+            <label for="filter-gangnam">Gangnam</label>
+
+            <div class="place_list_wrap">
+            <ul class="place_list clearfix">
+              
+              <li class="guanghuamun">
+                <div class="img_wrap">
+                  <img src="./css/image/gyeongbokgung-palace-7507027_1280.jpg" alt="">
+                  <div class="hover_contents">
+                      <a href=""><i class="fas fa-search"></i></a>
+                  </div>
+                </div>
+                <div class="place-text">
+                  <h4>Gwanghwamun</h4>
+                  <p>Admire the ancient palaces alive with history</p>
+                </div>
+              </li>
+              
+              <li class="meyongdong">
+                <div class="img_wrap">
+                  <img src="./css/image/myeongdong-326135_1280.jpg" alt="">
+                  <div class="hover_contents">
+                      <a href=""><i class="fas fa-search"></i></a>
+                  </div>
+                </div>
+                <div class="place-text">
+                  <h4>Meyongdong</h4>
+                  <p>Enjoy the shopping paradise all around</p>
+                </div>
+              </li>
+
+              <li class="iteawon">
+                <div class="img_wrap">
+                  <img src="./css/image/kyonglidangil.jpg" alt="">
+                  <div class="hover_contents">
+                      <a href=""><i class="fas fa-search"></i></a>
+                  </div>
+                </div>
+                <div class="place-text">
+                  <h4>Iteawon</h4>
+                  <p>Explore the cultural melting pot of the city</p>
+                </div>
+
+                <li class="jamsil">
+                  <div class="img_wrap">
+                    <img src="./css/image/korea-3621711_1280.jpg" alt="">
+                    <div class="hover_contents">
+                        <a href=""><i class="fas fa-search"></i></a>
+                    </div>
+                  </div>
+                  <div class="place-text">
+                    <h4>Jamsil</h4>
+                    <p>Enjoy this retreat into nature for some wonderful surprises</p>
+                  </div>
+
+                  <li class="seongsu">
+                    <div class="img_wrap">
+                      <img src="./css/image/article_201910_03_1200[0].jpg" alt="">
+                      <div class="hover_contents">
+                          <a href=""><i class="fas fa-search"></i></a>
+                      </div>
+                    </div>
+                    <div class="place-text">
+                      <h4>Seongsu</h4>
+                      <p>Come and see the Korean artists</p>
+                    </div>
+
+                    <li class="gangnam">
+                      <div class="img_wrap">
+                        <img src="./css/image/gangnam.jpg" alt="">
+                        <div class="hover_contents">
+                            <a href=""><i class="fas fa-search"></i></a>
+                        </div>
+                      </div>
+                      <div class="place-text">
+                        <h4>Gangnam</h4>
+                        <p>Come check out what's trending in Seoul</p>
+                      </div>
+
+            </ul>
+          
+          </div>  
+            <p class="view_more">
+              <a href="" class="btn">View More</a>
+            </p>
+
+
+          </div>
+        </section> <!--// recommended places-->
+
+
+
+
+    </main> <!-- ㅡmain은 footer 전까지 -->
+
+    <footer>
+      
+      <div class="footer_top">
+        <a href=""><div class="sns_icon_box"><img src="" alt=""></div></a> <!-- facebook -->
+        <a href=""><div class="sns_icon_box"><img src="" alt=""></div></a> <!-- instagram -->
+        <a href=""><div class="sns_icon_box"><img src="" alt=""></div></a> <!-- youtube -->
+      </div>
+      
+      <div class="footer_mid">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="footer_bottom">
+        <p>2023 DainShin.All rights reserved</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
